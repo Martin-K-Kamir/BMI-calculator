@@ -1,0 +1,30 @@
+@import 'variables';
+
+.result {
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  &__text {
+    color: $clr-primary-1;
+    font-size: 2.5rem;
+  }
+
+  &__bmi {
+    font-size: 7rem;
+    font-weight: 900;
+
+    &--thin {color: $clr-thin-light}
+    &--healthy {color: $clr-healthy-dark}
+    &--overweight {color: $clr-overweight-dark}
+    &--obese1 {color: $clr-obese1-dark}
+    &--obese2 {color: $clr-obese2-light}
+    &--obese3 {color: $clr-obese3-light}
+  }
+
+  &__btn {
+    width: 100%;
+    margin-top: auto;
+  }
+}

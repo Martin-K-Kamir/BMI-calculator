@@ -1,0 +1,51 @@
+@import 'variables';
+
+.hidden {
+  display: none !important;
+}
+
+//$ Colors for health levels----------------------------------
+
+.bg--thin {
+  background-image: linear-gradient(140deg, $clr-thin-dark, $clr-thin-light);
+}
+
+.bg--healthy {
+  background-image: linear-gradient(
+    140deg,
+    $clr-healthy-dark,
+    $clr-healthy-light
+  );
+}
+
+.bg--overweight {
+  background-image: linear-gradient(
+    140deg,
+    $clr-overweight-dark,
+    $clr-overweight-light
+  );
+}
+
+.bg--obese1 {
+  background-image: linear-gradient(
+    140deg,
+    $clr-obese1-dark,
+    $clr-obese1-light
+  );
+}
+
+.bg--obese2 {
+  background-image: linear-gradient(
+    140deg,
+    $clr-obese2-dark,
+    $clr-obese2-light
+  );
+}
+
+.bg--obese3 {
+  background-image: linear-gradient(
+    140deg,
+    $clr-obese3-dark,
+    $clr-obese3-light
+  );
+}

@@ -1,0 +1,33 @@
+@import 'variables';
+
+.calculating {
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__icon {
+    width: 14rem;
+    color: $clr-primary-1;
+    animation: rotate 3.5s infinite linear;
+  }
+
+  &__text {
+    color: $clr-primary-1;
+    font-size: 3rem;
+    font-weight: 900;
+    margin-top: 3rem;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

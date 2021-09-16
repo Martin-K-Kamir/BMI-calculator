@@ -1,0 +1,43 @@
+@import 'variables';
+
+.calculator {
+  display: flex;
+  flex-direction: column;
+
+  &__label {
+    font-size: 2.05rem;
+    position: relative;
+  }
+
+  &__input {
+    width: 100%;
+    height: 4rem;
+    background-color: $clr-secondary-4;
+    color: $clr-secondary-1;
+    font-size: 1.6rem;
+    padding: 1rem;
+    margin-bottom: 3.5rem;
+    border-radius: 0.5rem;
+    border: none;
+
+    &:focus {
+      border: 0.2rem solid $clr-primary-1;
+      outline: none;
+    }
+
+    &::placeholder {color: $clr-secondary-1}
+
+    &--check {background-color: $clr-approved-light}
+    &--check-icon {color: $clr-approved-dark}
+
+    &--error {background-color: $clr-error-light}
+    &--error-icon {color: $clr-error-dark}
+
+    &--check-icon,
+    &--error-icon {
+      position: absolute;
+      width: 2rem;
+      transform: translateX(-4rem) translateY(0.35rem);
+    }
+  }
+}

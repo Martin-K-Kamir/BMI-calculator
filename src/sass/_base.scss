@@ -1,0 +1,90 @@
+@import 'variables';
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: $font-primary;
+  font-weight: 400;
+  line-height: 1.6;
+  color: $clr-secondary-1;
+  background-image: linear-gradient(140deg, $clr-secondary-2, $clr-secondary-3);
+}
+
+// Hides arrows for Chrome, Safari, Edge, Opera
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+// Hides arrows for Firefox
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+input,
+button {
+  font-family: inherit;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &__logo {
+    color: $clr-white-1;
+    font-size: 5.6rem;
+
+    &::after {
+      content: 'calc';
+      color: $clr-primary-1;
+      font-weight: 100;
+    }
+  }
+
+  &__box {
+    width: 50rem;
+    height: 49.74rem;
+    background-color: $clr-white-1;
+    padding: 6rem;
+    border-radius: 2.5rem;
+    box-shadow: 0 1rem 3rem 0.1rem hsla(0, 0%, 0%, 0.1);
+  }
+}
+
+.btn {
+  background-color: $clr-primary-1;
+  color: $clr-white-1;
+  font-size: 2rem;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  transition: all 0.2s;
+
+  &:hover {
+    background-color: $clr-primary-2;
+    cursor: pointer;
+  }
+
+  &:focus {
+    background-color: $clr-primary-2;
+    outline: none;
+  }
+}
