@@ -27,12 +27,8 @@
 
     &::placeholder {color: $clr-secondary-1}
 
-    &--check {background-color: $clr-approved-light}
     &--check-icon {color: $clr-approved-dark}
-
-    &--error {background-color: $clr-error-light}
     &--error-icon {color: $clr-error-dark}
-
     &--check-icon,
     &--error-icon {
       position: absolute;

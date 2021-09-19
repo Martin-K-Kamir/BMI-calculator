@@ -87,4 +87,8 @@ button {
     background-color: $clr-primary-2;
     outline: none;
   }
+
+  &--disabled {
+    background-color: $clr-primary-3;
+  }
 }
