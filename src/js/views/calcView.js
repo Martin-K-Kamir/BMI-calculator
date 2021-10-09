@@ -4,6 +4,7 @@ import icons from '../../icons/bootstrap-icons.svg';
 
 class calcView {
   _timeout = null;
+  _copyright = document.querySelector('.copyright');
   _btn = document.querySelector('.calculator__btn');
   _inputs = document.querySelectorAll('.calculator__input');
   _heightInput = document.querySelector('.height');
@@ -98,6 +99,32 @@ class calcView {
 
   _clear(curInput) {
     if (curInput.nextElementSibling) curInput.nextElementSibling.remove();
+  }
+
+  hideCopyright() {
+    this._inputs.forEach(curInput => {
+      curInput.addEventListener(
+        'focus',
+        function (e) {
+          const curHeight = e.view.screen.height;
+
+          if (curHeight <= 552) this._copyright.classList.add('hidden');
+        }.bind(this),
+        false
+      );
+    });
+  }
+
+  showCopyright() {
+    this._inputs.forEach(curInput => {
+      curInput.addEventListener(
+        'blur',
+        function () {
+          this._copyright.classList.remove('hidden');
+        }.bind(this),
+        false
+      );
+    });
   }
 }
 export default new calcView();
