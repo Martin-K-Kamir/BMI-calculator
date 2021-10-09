@@ -1,7 +1,7 @@
 {
   "name": "BMIcalc",
   "version": "1.0.0",
-  "description": "Calculates the BMI",
+  "description": "Calculating the BMI",
   "main": "index.js",
   "scripts": {
     "dev": "parcel index.html",
