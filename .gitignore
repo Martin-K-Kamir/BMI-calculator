@@ -1,5 +1,5 @@
 node_modules
-.prettierrc
 .prettierignore
 dist
 .cache
+.prettierrc
