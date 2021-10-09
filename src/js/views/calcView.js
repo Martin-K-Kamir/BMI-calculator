@@ -101,6 +101,18 @@ class calcView {
     if (curInput.nextElementSibling) curInput.nextElementSibling.remove();
   }
 
+  showCopyright() {
+    this._inputs.forEach(curInput => {
+      curInput.addEventListener(
+        'blur',
+        function () {
+          this._copyright.classList.remove('hidden');
+        }.bind(this),
+        false
+      );
+    });
+  }
+
   hideCopyright() {
     this._inputs.forEach(curInput => {
       curInput.addEventListener(
@@ -109,18 +121,6 @@ class calcView {
           const curHeight = e.view.screen.height;
 
           if (curHeight <= 552) this._copyright.classList.add('hidden');
-        }.bind(this),
-        false
-      );
-    });
-  }
-
-  showCopyright() {
-    this._inputs.forEach(curInput => {
-      curInput.addEventListener(
-        'blur',
-        function () {
-          this._copyright.classList.remove('hidden');
         }.bind(this),
         false
       );
