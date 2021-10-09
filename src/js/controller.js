@@ -35,8 +35,8 @@ const controlCalculateBMI = function () {
 
 const init = function () {
   calcView.disableCalcBtn(true);
-  calcView.showCopyright();
   calcView.hideCopyright();
+  calcView.showCopyright();
   calcView.addHandlerListenInput(controlValidationOfInputs);
   resultView.addHandlerCalculateBMI(controlCalculateBMI);
 };
