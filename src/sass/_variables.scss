@@ -1,43 +1,48 @@
 //$ Colors ----------------------------------
 
 //* Primary
-$clr-primary-1: #49126d;
-$clr-primary-2: #3a0e58;
-$clr-primary-3: #49126d80;
+$clr-primary-1: #033270;
+$clr-primary-2: #01163259;
+$clr-primary-3: #1b4965;
+$clr-primary-4: #afdbe9;
+$clr-primary-5: #f4f8fbbe;
+$clr-primary-6: #011632;
+
+$clr-firefox-fix: #102b3c;
 
 //* Secondary
-$clr-secondary-1: #14213e;
-$clr-secondary-2: #0e579c;
-$clr-secondary-3: #a9d6e5;
-$clr-secondary-4: #f4f8fb;
+$clr-secondary-1: #422258;
+$clr-secondary-2: #341b46;
+$clr-secondary-3: #42225885;
 
 //* White
 $clr-white-1: #ffffff;
 
-//* Approved
-$clr-approved-dark: #38b000;
+//* Approved / Error
+$clr-approved: #39b300;
+$clr-error: #f50f0f;
 
-//* Error
-$clr-error-dark: #f50f0f;
-
-//* Health levels
-$clr-thin-dark: #8b0005;
-$clr-thin-light: #ff1e1e;
-
-$clr-healthy-dark: #25a244;
-$clr-healthy-light: #92e6a7;
-
-$clr-overweight-dark: #faa700;
-$clr-overweight-light: #fae588;
-
-$clr-obese1-dark: #f42b03;
-$clr-obese1-light: #faa307;
-
-$clr-obese2-dark: #780116;
-$clr-obese2-light: #f52f57;
-
-$clr-obese3-dark: #8b0005;
-$clr-obese3-light: #ff1e1e;
+//* Health categories
+$clr-healthy: #39b300;
+$clr-warning: #faa700;
+$clr-bad: #ff1f1f;
 
 //$ Fonts ----------------------------------
 $font-primary: 'Varela Round', sans-serif;
+
+//$ Responsive breakpoints ----------------------------------
+
+//* Width
+$bp-largest: 31.875em;
+$bp-biggest: 30em;
+$bp-medium: 27.75em;
+$bp-smallest: 21.875em;
+$bp-tiniest: 20em;
+
+//* Height
+$bp-h-largest: 38em;
+$bp-h-smallest: 38em;
+
+//$ Box height ----------------------------------
+$box-height: 49.74rem;
+$box-padding: 6rem;

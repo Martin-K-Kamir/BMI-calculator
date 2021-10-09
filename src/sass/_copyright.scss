@@ -1,0 +1,53 @@
+@import 'variables';
+
+.copyright {
+  position: absolute;
+  bottom: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  // Fix for firefox making the color bit darker
+  @supports (-moz-appearance: none) {
+    opacity: 75%;
+  }
+
+  &__text {
+    width: 65ch;
+    text-align: center;
+
+    @media only screen and (max-width: $bp-largest) {
+      font-size: 1.1rem;
+    }
+    @media only screen and (max-width: $bp-medium) {
+      width: 50ch;
+    }
+
+    // Fix for firefox making the color bit darker
+    @supports (-moz-appearance: none) {
+      color: $clr-firefox-fix;
+    }
+  }
+
+  &__link:link,
+  &__link:visited,
+  &__link:active {
+    color: $clr-primary-3;
+
+    // Fix for firefox making the color bit darker
+    @supports (-moz-appearance: none) {
+      color: $clr-firefox-fix;
+    }
+  }
+
+  &__icons {
+    display: flex;
+    gap: 1rem;
+  }
+
+  &__icon {
+    width: 2rem;
+  }
+}

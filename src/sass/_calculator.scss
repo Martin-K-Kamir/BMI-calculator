@@ -1,39 +1,65 @@
 @import 'variables';
 
 .calculator {
+  // Making calculator, calculating, result boxes same height;
+  height: calc(#{$box-height} - (#{$box-padding} * 2));
+
   display: flex;
   flex-direction: column;
 
   &__label {
-    font-size: 2.05rem;
     position: relative;
+    color: $clr-secondary-1;
+    font-size: 2.05rem;
+
+    // Fix for firefox making the color bit darker
+    @supports (-moz-appearance:none) {
+      color: #3d1f51;
+    }
   }
 
   &__input {
     width: 100%;
     height: 4rem;
-    background-color: $clr-secondary-4;
-    color: $clr-secondary-1;
+    background-color: $clr-primary-5;
+    color: $clr-primary-6;
     font-size: 1.6rem;
     padding: 1rem;
     margin-bottom: 3.5rem;
     border-radius: 0.5rem;
     border: none;
 
+    // Fix for firefox when approved/error icon show below input
+    @supports (-moz-appearance:none) {
+      width: 99%;
+    }
+
     &:focus {
-      border: 0.2rem solid $clr-primary-1;
+      border-left: .4rem solid $clr-secondary-1;
+      border-radius: 0rem 0.5rem 0.5rem 0rem;
       outline: none;
     }
 
-    &::placeholder {color: $clr-secondary-1}
+    &::placeholder {color: $clr-primary-2}
 
-    &--check-icon {color: $clr-approved-dark}
-    &--error-icon {color: $clr-error-dark}
+    &--check-icon {color: $clr-approved}
+    &--error-icon {color: $clr-error}
     &--check-icon,
     &--error-icon {
       position: absolute;
       width: 2rem;
       transform: translateX(-4rem) translateY(0.35rem);
+
+      // Fix for the icon to make it center vertically
+      @media only screen and (max-width: $bp-largest) {
+        transform: translateX(-4rem) translateY(0.20rem);
+      }
+      @media only screen and (max-width: $bp-medium) {
+        transform: translateX(-4rem) translateY(0.10rem);
+      }
+      @media only screen and (max-width: $bp-tiniest) {
+        transform: translateX(-4rem) translateY(-0.3rem);
+      }
     }
   }
 }

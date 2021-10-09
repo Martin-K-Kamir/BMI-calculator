@@ -15,7 +15,7 @@
     <script defer src="src/js/controller.js"></script>
   </head>
   <body>
-    <div class="container">
+    <main class="container">
       <h1 class="container__logo">BMI</h1>
       <div class="container__box">
         <form class="calculator">
@@ -53,12 +53,48 @@
           </div>
 
           <input
-            class="calculator__btn btn"
+            class="calculator__btn btn btn--disabled"
             type="submit"
             value="Calculate BMI"
           />
         </form>
       </div>
-    </div>
+      <div class="copyright">
+        <p class="copyright__text">
+          &copy; Copyright 2021 by Martin Kamír. All Rights Reserved. This
+          application does not accurately calculate BMI. This page was created
+          for my own improvement only.
+        </p>
+        <div class="copyright__icons">
+          <a
+            class="copyright__link"
+            href="https://martinkamir.com"
+            target="_blank"
+          >
+            <svg class="copyright__icon" width="32" height="32">
+              <use href="src/icons/bootstrap-icons.svg#globe" />
+            </svg>
+          </a>
+          <a
+            class="copyright__link"
+            href="https://github.com/Martin-K-Kamir"
+            target="_blank"
+          >
+            <svg class="copyright__icon" width="32" height="32">
+              <use href="src/icons/bootstrap-icons.svg#github" />
+            </svg>
+          </a>
+          <a
+            class="copyright__link"
+            href="https://www.linkedin.com/in/martin-kam%C3%ADr-2967aa222/"
+            target="_blank"
+          >
+            <svg class="copyright__icon" width="32" height="32">
+              <use href="src/icons/bootstrap-icons.svg#linkedin" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </main>
   </body>
 </html>

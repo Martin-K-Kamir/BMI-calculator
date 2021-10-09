@@ -1,14 +1,15 @@
 @import 'variables';
 
 .result {
-  height: 100%;
+  // Making calculator, calculating, result boxes same height;
+  height: calc(#{$box-height} - (#{$box-padding} * 2));
 
-  display: flex;
+  display: none; // will be changed to flex when result is rendered
   flex-direction: column;
 
   &__text {
-    color: $clr-primary-1;
     font-size: 2.5rem;
+    color: $clr-secondary-1;
   }
 
   &__bmi {
@@ -22,6 +23,6 @@
   }
 }
 
-.good {color: $clr-healthy-dark}
-.bad {color: $clr-overweight-dark}
-.very-bad {color: $clr-obese3-light}
+.healthy {color: $clr-healthy}
+.warning {color: $clr-warning}
+.bad {color: $clr-bad}

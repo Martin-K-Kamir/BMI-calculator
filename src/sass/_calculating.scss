@@ -1,7 +1,8 @@
 @import 'variables';
 
 .calculating {
-  height: 100%;
+  // Making calculator, calculating, result boxes same height;
+  height: calc(#{$box-height} - (#{$box-padding} * 2));
 
   display: flex;
   flex-direction: column;
@@ -10,14 +11,14 @@
 
   &__icon {
     width: 14rem;
-    color: $clr-primary-1;
+    color: $clr-secondary-1;
     animation: rotate 3.5s infinite linear;
   }
 
   &__text {
-    color: $clr-primary-1;
+    color: $clr-secondary-1;
     font-size: 3rem;
-    font-weight: 900;
+    font-weight: 500;
     margin-top: 3rem;
   }
 }
