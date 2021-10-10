@@ -14,6 +14,6 @@ export const HEALTHY_OVERWEIGHT_BR = 29;
 export const OVERWEIGHT_OBESE_BR = 37;
 
 export const HEIGHT_SIZE_LIMIT = 852;
-export const LOADING_TEXT_SEC = 0.5;
+export const LOADING_TEXT_SEC = 0.1;
 export const CHECKING_VALUE_SEC = 0.6;
 export const CALCULATING_BMI_SEC = 1.5;
