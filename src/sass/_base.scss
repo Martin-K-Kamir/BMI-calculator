@@ -31,7 +31,13 @@ body {
   font-weight: 400;
   line-height: 1.6;
   color: $clr-primary-1;
-  background-image: linear-gradient(140deg, $clr-primary-1, $clr-primary-4);
+
+  background: linear-gradient(
+    to right,
+    $clr-gradient-1,
+    $clr-gradient-2,
+    $clr-gradient-3
+  );
 }
 
 // Hides input arrows for Chrome, Safari, Edge, Opera
@@ -49,6 +55,13 @@ input[type='number'] {
 input,
 button {
   font-family: inherit;
+}
+
+input,
+button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .container {
@@ -82,7 +95,7 @@ button {
 
     &::after {
       content: 'calc';
-      color: $clr-secondary-1;
+      color: $clr-primary-2;
       font-size: 5.1rem;
       font-weight: 100;
 
@@ -102,7 +115,7 @@ button {
 
     @media only screen and (max-width: $bp-largest) {
       width: 100%;
-      height: 91vh;
+      height: 90vh;
       border-radius: 0rem;
     }
     @media only screen and (max-width: $bp-medium) {
@@ -149,7 +162,8 @@ button {
 }
 
 .btn {
-  background-color: $clr-secondary-1;
+  width: 99%;
+  background-color: $clr-primary-1;
   color: $clr-white-1;
   font-size: 2rem;
   padding: 1.5rem;
@@ -157,21 +171,18 @@ button {
   border: none;
   transition: all 0.2s;
 
-  &:hover {
-    background-color: $clr-secondary-2;
-    cursor: pointer;
-  }
-
+  &:hover,
   &:focus {
-    background-color: $clr-secondary-2;
+    background-color: $clr-primary-1--darker;
+    cursor: pointer;
     outline: none;
   }
 
   &--disabled {
-    background-color: $clr-secondary-3;
+    background-color: $clr-primary-1--lighter;
 
     &:hover {
-      background-color: $clr-secondary-3;
+      background-color: $clr-primary-1--lighter;
     }
   }
 }

@@ -9,38 +9,26 @@
 
   &__label {
     position: relative;
-    color: $clr-secondary-1;
-    font-size: 2.05rem;
-
-    // Fix for firefox making the color bit darker
-    @supports (-moz-appearance:none) {
-      color: #3d1f51;
-    }
+    font-size: 2rem;
   }
 
   &__input {
-    width: 100%;
+    width: 99%; // Fix for firefox, safari when approved/error icon show below input
     height: 4rem;
-    background-color: $clr-primary-5;
-    color: $clr-primary-6;
+    background-color: $clr-white-2;
     font-size: 1.6rem;
     padding: 1rem;
     margin-bottom: 3.5rem;
     border-radius: 0.5rem;
     border: none;
 
-    // Fix for firefox when approved/error icon show below input
-    @supports (-moz-appearance:none) {
-      width: 99%;
-    }
-
     &:focus {
-      border-left: .4rem solid $clr-secondary-1;
+      border-left: .2rem solid $clr-primary-1--lighter;
       border-radius: 0rem 0.5rem 0.5rem 0rem;
       outline: none;
     }
 
-    &::placeholder {color: $clr-primary-2}
+    &::placeholder {color:$clr-primary-3}
 
     &--check-icon {color: $clr-approved}
     &--error-icon {color: $clr-error}

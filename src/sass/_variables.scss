@@ -1,22 +1,20 @@
-//$ Colors ----------------------------------
+//$ Colors ---------------
 
 //* Primary
-$clr-primary-1: #033270;
-$clr-primary-2: #01163259;
-$clr-primary-3: #1b4965;
-$clr-primary-4: #afdbe9;
-$clr-primary-5: #f4f8fbbe;
-$clr-primary-6: #011632;
+$clr-primary-1: #203a43;
+$clr-primary-1--darker: #1a2e36;
+$clr-primary-1--lighter: #89b0ae;
+$clr-primary-2: #89b0ae;
+$clr-primary-3: #1f394173;
 
-$clr-firefox-fix: #102b3c;
-
-//* Secondary
-$clr-secondary-1: #422258;
-$clr-secondary-2: #341b46;
-$clr-secondary-3: #42225885;
+//* Gradient colors
+$clr-gradient-1: #0f2027;
+$clr-gradient-2: #203a43;
+$clr-gradient-3: #2c5364;
 
 //* White
 $clr-white-1: #ffffff;
+$clr-white-2: #f4f8fbbe;
 
 //* Approved / Error
 $clr-approved: #39b300;
@@ -27,10 +25,10 @@ $clr-healthy: #39b300;
 $clr-warning: #faa700;
 $clr-bad: #ff1f1f;
 
-//$ Fonts ----------------------------------
+//$ Fonts ---------------
 $font-primary: 'Varela Round', sans-serif;
 
-//$ Responsive breakpoints ----------------------------------
+//$ Responsive breakpoints ---------------
 
 //* Width
 $bp-largest: 31.875em;
@@ -43,6 +41,6 @@ $bp-tiniest: 20em;
 $bp-h-largest: 38em;
 $bp-h-smallest: 38em;
 
-//$ Box height ----------------------------------
+//$ Box height ---------------
 $box-height: 49.74rem;
 $box-padding: 6rem;
