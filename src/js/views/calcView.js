@@ -1,5 +1,9 @@
 import * as inputView from './inputView.js';
-import { CHECKING_VALUE_SEC } from '../config.js';
+import {
+  CHECKING_VALUE_SEC,
+  HEIGHT_SIZE_LIMIT,
+  LOADING_TEXT_SEC,
+} from '../config.js';
 import icons from '../../icons/bootstrap-icons.svg';
 
 class calcView {
@@ -106,7 +110,9 @@ class calcView {
       curInput.addEventListener(
         'blur',
         function () {
-          this._copyright.classList.remove('hidden');
+          setTimeout(() => {
+            this._copyright.classList.remove('hidden');
+          }, LOADING_TEXT_SEC * 1000);
         }.bind(this),
         false
       );
@@ -120,7 +126,8 @@ class calcView {
         function (e) {
           const curHeight = e.view.screen.height;
 
-          if (curHeight <= 852) this._copyright.classList.add('hidden');
+          if (curHeight <= HEIGHT_SIZE_LIMIT)
+            this._copyright.classList.add('hidden');
         }.bind(this),
         false
       );
