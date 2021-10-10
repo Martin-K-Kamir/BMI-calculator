@@ -120,7 +120,7 @@ class calcView {
         function (e) {
           const curHeight = e.view.screen.height;
 
-          if (curHeight <= 552) this._copyright.classList.add('hidden');
+          if (curHeight <= 652) this._copyright.classList.add('hidden');
         }.bind(this),
         false
       );
